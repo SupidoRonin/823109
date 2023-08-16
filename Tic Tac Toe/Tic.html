@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Images/Logo.png">
+    <title>Tic Tac Toe Ai</title>
+    <link rel="stylesheet" href="TicS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body class="blue">
+  <!-- select box -->
+  <div class="select-box">
+    <header>Tic Tac Toe Ai</header>
+    <div class="content">
+      <div class="title">Select Your Player</div>
+      <div class="options">
+        <button class="playerX">Player X</button>
+        <button class="playerO">Player O</button>
+      </div>
+      <div class="credit">  Game Made By <a href="https://supidoronin.github.io/Ronin-Website/Ronin.html?fbclid=IwAR3dNs8e11OBP1vizGdsoSrn-tpC6AELrnohzDB7IEbtQwxBdWz19NMT92Q" target="_blank">Rōnin</a></div>
+    <div class="title">Choose style Color</div>
+    <div class="card">
+        <p>Pick a color</p>
+        <ul>
+            <li class="color-item" id="red"></li>
+            <li class="color-item" id="green"></li>
+            <li class="color-item" id="amber"></li>
+            <li class="color-item" id="blue"></li>
+            <li class="color-item" id="gray"></li>
+        </ul>
+    </div>
+    
+    </div>
+  </div> 
+
+  <!-- playboard section -->
+  <div class="play-board">
+    <div class="details">
+      <div class="players">
+        <span class="Xturn">X's Turn</span>
+        <span class="Oturn">O's Turn</span>
+        <div class="slider"></div>
+      </div>
+    </div>
+    <div class="play-area">
+      <section>
+        <span class="box1"></span>
+        <span class="box2"></span>
+        <span class="box3"></span>
+      </section>
+      <section>
+        <span class="box4"></span>
+        <span class="box5"></span>
+        <span class="box6"></span>
+      </section>
+      <section>
+        <span class="box7"></span>
+        <span class="box8"></span>
+        <span class="box9"></span>
+      </section>
+    </div>
+  </div>
+
+  <!-- result box -->
+  <div class="result-box">
+    <div class="won-text"></div>
+    <div class="btn"><button>Replay</button></div>
+  </div>
+
+  <script src="TicSP.js"></script>
+
+</body>
+</html>
