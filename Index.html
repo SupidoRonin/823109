@@ -1,98 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Games</title>
 
-    <!-- ===== Link Swiper's CSS ===== -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
-    <!-- ===== Fontawesome CDN Link ===== -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-        
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="Style.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="Style.css">
+           
+        <!-- Icon -->
+        <link rel="icon" href="Work/Game.jpg">
+    </head>
+    <body>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
 
-     <link rel="icon" href="Work/Game.jpg">
-     <title>My Games</title> 
-</head>
-<body>
+                            <div class="card-image">
+                                <img src="SnakeGame/Images/SnakeLogo.png" alt="Snake Game" class="card-img">
+                            </div>
+                        </div>
 
-  <section>
-    
-    <div class="swiper mySwiper container">
-      <div class="swiper-wrapper content">
+                        <div class="card-content">
+                            <h2 class="name">Snake Game</h2>
+                            <p class="description">You Are a Snake trying to eat apples.</p>
 
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-             <img src="SnakeGame/Images/SnakeLogo.png" alt="Snake Game"> 
-            </div>
+                            <a class="button" href="SnakeGame/Snake.html">Try !</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
 
-            <div class="name-profession">
-              <span class="name">Snake Game</span>
-              <span class="profession">You Are A Snake<br>Trying to eat apple</span>
-            </div>
+                            <div class="card-image">
+                                <img src="Tic Tac Toe/Images/Logo.png" alt="Tic Tac Toe" class="card-img">
+                            </div>
+                        </div>
 
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
+                        <div class="card-content">
+                            <h2 class="name">Tic Tac Toe with Ai</h2>
+                            <p class="description">This Game is Tic Tac Toe but with a Ai.</p>
 
-            <div class="button">
-              <a class="aboutMe" href="SnakeGame/Snake.html">Try !</a>
-            </div>
-          </div>
+                            <a class="button" href="Tic Tac Toe/Images/Logo.png">Try !</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="Ping Pong/Images/PingLogo.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Ping Pong</h2>
+                            <p class="description">Table tennis (also known as ping-pong) is a racket sport derived from tennis but distinguished by its playing surface being atop a stationary table, rather than the court on which players stand.</p>
+
+                            <a class="button" href="Ping Pong/index.html">Try !</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="Hangman Game/images/Hangman Game.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Hangman Game</h2>
+                            <p class="description">You Should Answer questions or the hangman will die.</p>
+
+                            <a class="button" href="Hangman Game/Index.html">try !</a>
+                        </div>
+                    </div>
+                     
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="Tic Tac Toe/Images/Logo.png" alt=""> 
-            </div>
-
-            <div class="name-profession">
-              <span class="name">Tic Tac Toe</span>
-              <span class="profession">Tic Tac Toe But With Ai</span>
-            </div>
-
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-
-            <div class="button">
-              <a class="aboutMe" href="Tic Tac Toe/Tic.html">Try !</a>
-            </div>
-          </div>
-        </div>
         
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </body>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 3,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+    <!-- Swiper JS -->
+      <script src="js/swiper-bundle.min.js"></script>
 
-</body>
+    <!-- JavaScript -->
+    <script src="App.js"></script>
 </html>
